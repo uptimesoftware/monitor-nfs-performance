@@ -2,7 +2,6 @@
 <uptime xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.uptimesoftware.com/erdc/erdc erdc" xmlns="http://www.uptimesoftware.com/erdc/erdc" xmlns:upt="http://www.uptimesoftware.com/erdc/erdc" version="4.0" target_grouping="other">
 	<class>NFS Mount Performance Monitor</class>
 	<exec>com.uptimesoftware.uptime.erdc.MonitorCustomScriptRunner</exec>
-	<elements>
 	<erdc_version>4.0</erdc_version>
 	<category>Operating System Monitors</category>
 	<category_related>Storage Monitors</category_related>
@@ -11,7 +10,8 @@
 		<supported_platforms>windows, linux</supported_platforms>
 		<upgrade_in_place>true</upgrade_in_place>
 		<requires_agent_scripts>true</requires_agent_scripts>
-	</grid_info>	
+	</grid_info>
+	<elements>
 		<element name="process_windows" parameter_type="input" data_type="string" gui_basic="1" range_type="0" hidden="true">
 			<control_options> size:40 </control_options>
 			<default_value>plugins/scripts/monitor-nfs-performance/monitor-nfs-performance.sh</default_value>
