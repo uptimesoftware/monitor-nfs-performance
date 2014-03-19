@@ -2,4 +2,4 @@
 inst=`grep pidfile /etc/init.d/uptime_core | head -n 1 | cut -d: -f2 | rev | cut -c 12- | rev | sed -e 's/^[ \t]*//'`
 MIBDIRS=$inst/mibs
 export MIBDIRS
-../../apache/bin/php NFS_Performance_Monitor.php
+/usr/local/uptime/apache/bin/php ../../plugins/scripts/monitor-nfs-performance/monitor-nfs-performance.php
