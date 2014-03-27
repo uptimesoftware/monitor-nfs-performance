@@ -3,10 +3,10 @@ $port = $_SERVER['UPTIME_UPTIME_PORT'];
 $host = $_SERVER['UPTIME_UPTIME_HOSTNAME'];
 $pass = $_SERVER['UPTIME_UPTIME_NFS_PASSWORD'];
 $scri = $_SERVER['UPTIME_UPTIME_NFS_SCRIPT'];
- if($host == ''){
+if($host == ''){
     $host = $_SERVER['UPTIME_HOSTNAME'];
 }
-$cmd = "/usr/local/uptime/scripts/agentcmd -p $port $host rexec $pass $scri";
+$cmd = "..\agentcmd -p $port $host rexec $pass $scri";
 $output = shell_exec($cmd);
 $out_arr = preg_split("/Server rpc:/",$output);
 $out_arr_sin = preg_split("/\n\n/",$out_arr[1]);
