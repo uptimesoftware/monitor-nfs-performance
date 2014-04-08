@@ -1,6 +1,0 @@
-name=NFS Mount Performance Monitor
-version=1.1
-platforms=linux windows
-description=This plugin connects to a Solaris client and reports on calls, badcalls, retrans, badxids, timeouts, newcreds and nulls.
-requiresAgentScript=false
-restartCore=false
